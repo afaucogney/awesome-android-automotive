@@ -83,3 +83,7 @@ Objectifs :
 
 
  - [Android Automotive OS Discussion Group](https://groups.google.com/a/android.com/g/automotive-developers?pli=1)
+
+
+ - [Meetup AAOS](https://www.meetup.com/fr-FR/the-aosp-and-aaos-meetup/)
+   - [minutes](https://2net.co.uk/blog/the-aosp-and-aaos-meetup) 
