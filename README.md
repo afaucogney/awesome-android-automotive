@@ -9,4 +9,34 @@ Objectifs :
 
 ## Resources
 
+- [How to build a Android Automotive App](https://youtu.be/AHHERLwjUGo) during I/O 2019
+  - Android Auto / Automotive app are quite same in terme of implementation
+  - Dedicated module must be implemented for both AA and AAOS
+  - Business logic should be shared in a commun module with the App
+  - There is no launchqble activity in AAOS App
+  - Distraction is almost handle by OS
+  - Permission if reauired, should be ask asap (sign in for exemple)
+  - Sign in may be done with login, BT, other
+
+
 - [An introduction to Android Automotive OS](https://youtu.be/KVM5njlZ4sM) by Chris Simmonds qt NDC TechnTowns
+  - Android Auto in 2014
+  - AAOS in 2017
+  - Android in IVI already in market (Honda JB 4.2, Hundai GB 2.3, Renault 4.1)  
+  - AAOS part of AOSP
+  - AAOS is not production ready, it need to be adpated by OEM
+  - GAS (Google Automotive Service) is not free, and include Store, Assistant and Map)
+    - Per unit license
+    - Must pass test CTS, VTS, ATS
+    - Must install google apps
+ 
+ ```mermaid
+ graph TD
+    A(Car app) --> B(Car manager)
+    B --> |ICar AIDL interfaces| C(Car service)
+    C --> |IVehicle HIDL interfaces| D(Vehicle HAL)
+    D --> |Vechile bus| E(Vehicle ECUs)
+ ```
+ 
+  - Vehicle property is car signal available in AAOS
+  - Vehicle property may have different changeMode static, on_change, continuous (subscription with sampling rate)
