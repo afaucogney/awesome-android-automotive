@@ -39,4 +39,8 @@ Objectifs :
  ```
  
   - Vehicle property is car signal available in AAOS
+  - It does exist more than 150 property of group VEchilePropertyCroup:System
+  - Vendors can add preperty marked VEchilePropertyCroup:Vendor
+    - must be added in native as well as java, with it type, an its area and with a uniq ID
   - Vehicle property may have different changeMode static, on_change, continuous (subscription with sampling rate)
+  - May list vechile property with dumpsys car_service (-h with list of option)
