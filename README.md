@@ -44,3 +44,17 @@ Objectifs :
     - must be added in native as well as java, with it type, an its area and with a uniq ID
   - Vehicle property may have different changeMode static, on_change, continuous (subscription with sampling rate)
   - May list vechile property with dumpsys car_service (-h with list of option)
+  - Car maner is the APi for the car service (android.car.jar)
+  - Car manager provides 23 interfaces
+    - App needs to get permission to get car services
+    - Only a few are available
+      - CAR_INFO
+      - READ_CAR_DISPLAY_UNITS
+      - CONTROL_CAR_DISPLAY_UNITS
+      - CAR_ENERGY_PORTS
+      - CAR_EXTERIOR_ENVIRONMENT
+      - CAR_POWERTRAIN
+      - CAR_SPEED
+      - CAR_ENERGY
+    - Others are for OEM only (marked as signature|privileged), ship with OS
+      - to access vendor property, app need PERMISSION_VENDOR_EXTENSION (level priviledged) 
