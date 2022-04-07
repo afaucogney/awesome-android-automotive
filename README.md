@@ -58,3 +58,28 @@ Objectifs :
       - CAR_ENERGY
     - Others are for OEM only (marked as signature|privileged), ship with OS
       - to access vendor property, app need PERMISSION_VENDOR_EXTENSION (level priviledged) 
+  - AAOS is not SCOS, as it may crash
+  - Car app is really controlled and restricted (distraction free)
+  - Should have GAS to publsih on Store
+  - Only those type are available
+    - media
+    - messaging using voice
+    - nav, parking, charging
+  - Only 30 apps for automotive and 400 general apps  (early 2021)
+  - RearViewCamera is a self contained app (in c++) with EVS (exterior view system)
+    - EVS and Android can not show info in same time
+  - Audio is managed by audio flinger, that handle wave in many bus (group of speaker)
+    - based on audio context  
+    - warning is not handle by AAOS 
+
+  - link : [2net](https://2net.co.uk/)
+  - https://2net.co.uk/videos
+
+
+ - [Android Bootcamp](https://source.android.com/devices/automotive/start/presentations) slides
+
+
+ - [Linux Plumber Micro Conf about Android](https://lpc.events/event/16/page/193-proposed-microconferences#android)
+
+
+ - [Android Automotive OS Discussion Group](https://groups.google.com/a/android.com/g/automotive-developers?pli=1)
